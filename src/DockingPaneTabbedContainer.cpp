@@ -921,7 +921,7 @@ void DockingPaneTabbedContainer::saveLayout(QDomNode *parentNode, bool includeGe
     QDomElement domElement = doc.createElement(this->metaObject()->className());
 
     domElement.setAttribute("id", this->id());
-    domElement.setAttribute("selectedTab", this->m_paneList[this->m_stackedWidget->currentIndex()]->id());
+    //domElement.setAttribute("selectedTab", this->m_paneList[this->m_stackedWidget->currentIndex()]->id());
 
     if (includeGeometry) {
         domElement.setAttribute("geometry", (QString) this->saveGeometry().toBase64());
